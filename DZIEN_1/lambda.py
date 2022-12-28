@@ -56,3 +56,19 @@ def ekstra_liczba(n):
     return n >= 100
 
 print(filtorwanie(num,ekstra_liczba))
+
+def mapowanie(dane,transformacja):
+    mapa = []
+    for element in dane:
+        mapa.append(transformacja(element))
+    return mapa
+
+def addFive(n):
+    return n+5
+
+def kwadrat(n):
+    return n**2
+
+print(mapowanie(num,addFive))
+
+print(mapowanie(num,kwadrat))
