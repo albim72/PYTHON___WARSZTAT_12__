@@ -42,3 +42,17 @@ def dodaj_trzy(x):
 
 trojka = list(map(dodaj_trzy,num))
 print(trojka)
+
+#własne funkcje wyższego rzędu
+
+def filtorwanie(dane,test):
+    plus = []
+    for element in dane:
+        if (test(element)):
+            plus.append(element)
+    return plus
+
+def ekstra_liczba(n):
+    return n >= 100
+
+print(filtorwanie(num,ekstra_liczba))
