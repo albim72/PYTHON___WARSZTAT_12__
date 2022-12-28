@@ -32,3 +32,6 @@ def ranking(*lang,nrrank):
 
 ranking("Java","C++","Python",nrrank=67)
 ranking("Python","Java","C++","C#","Perl","Object Pascal",nrrank=69)
+
+# ln = ["Python","C#","C"]
+# ranking(ln,nrrank=56)
