@@ -37,3 +37,38 @@ def gotowa_lista():
 
 print("________________________________________")
 gotowa_lista()
+
+#dekorator z funkcją magiczną __name__
+def debug(funkcja):
+    def wrapper(*args,**kwargs):
+        print(f'wołana funkcja to: {funkcja.__name__}')
+        funkcja(*args)
+    return wrapper
+
+@debug
+def info(i):
+    print(f'informacja: {i}')
+
+info("nr 2354353454")
+
+@debug
+def licz(x,y):
+    print(f'wynik: {x/y}')
+
+licz(4,5)
+
+#repeater
+
+def repeater(n):
+    def wrapper(funkcja):
+        def inner(*args):
+            for i in range(n):
+                funkcja(*args)
+        return inner
+    return wrapper
+
+@repeater(n=5)
+def komunikat(k,n):
+    print(f'ważny komunikat: {k}, numer: {n}')
+
+komunikat("abc",123)
