@@ -51,3 +51,18 @@ def zawijanie(czego):
 print("_______________________________________")
 zw = startstop(zawijanie)
 zw("czekoladek")
+
+
+@startstop
+def dmuchanie(czego):
+    print(f'dmuchanie {czego} na sylwestra')
+
+print("_______________________________________")
+dmuchanie("baloników")
+
+@startstop
+def fx(n):
+    print(f'wynik = {n*2-1}')
+
+print("_______________________________________")
+fx(89)
