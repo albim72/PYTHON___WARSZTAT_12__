@@ -32,3 +32,13 @@ print(nparz_f)
 
 #stwórz listę cube i przekaż do niej wszystkie wartości z listy num podniesione do potęgi 3
 #użyj funkcji standardowej map(funkcja,dane) - pierwszy parametr musi być funkcją opisującą warunek transformacji
+
+cube = list(map(lambda x:x**3,num))
+
+print(cube)
+
+def dodaj_trzy(x):
+    return x+3
+
+trojka = list(map(dodaj_trzy,num))
+print(trojka)
