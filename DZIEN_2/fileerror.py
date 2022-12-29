@@ -5,6 +5,7 @@ try:
     s = f.readline()
     i = int(s.strip())
     raise Exception(d=i/0)
+    #d=i/0
 except OSError as err:
     print(f'błąd systemowy: {err}')
 except ValueError:
@@ -13,6 +14,7 @@ except Exception as exx:
     print(f"klasa błędu: {type(exx)}")
     print(exx.args)
     print(exx)
+
+#komentowanie/odkomentowanie bloku -> CTRL+/
 except:
     print(f'nieoczekiwany błąd: {sys.exc_info()[0]}')
-    
