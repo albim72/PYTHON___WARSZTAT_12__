@@ -22,3 +22,11 @@ print(f'pole figury: {trp.__class__.__name__} wynosi: {trp.pole_figury():.2f} cm
 print("____________________________________")
 elp = Elipsa(5.5,7)
 print(f'pole figury: {elp.__class__.__name__} wynosi: {elp.pole_figury():.2f} cm2')
+
+#zbuduj klasę Kolo(Figura) -> pole kola -> pi*a**2
+#koło jest podzbiorem elips, zbuduj w klasie elipsa konstruktor __new__ i utwórz w klasie elipsa opcję
+#przekształcemnia klasy Elipsa w klasę Kolo pod warunkiem równosci obu półosi elipsy (promień okręgU)
+
+print("____________________________________")
+kl = Elipsa(6,6)
+print(f'pole figury: {kl.__class__.__name__} wynosi: {kl.pole_figury():.2f} cm2')
