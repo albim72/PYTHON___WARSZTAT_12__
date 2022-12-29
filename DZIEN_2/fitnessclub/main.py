@@ -1,5 +1,6 @@
 from osoba import Osoba
 from osoby.trener import Trener
+from osoby.klient import Klient
 
 os1 = Osoba("Feliks",45,99,178)
 os1.print_osoba()
@@ -31,4 +32,10 @@ print(tr2.infoklub())
 print(f'czy osoba jest trenerem personalnym? ({tr2.czytrener()})')
 
 print("_______________________________________")
+kl1 = Klient(6,"Olaf",23,100,192,67,"sztangista","Wrocław","biegi ultra",5,"80km 13h 13min 56s")
+kl1.print_osoba()
+print(f'czy osoba jest trenerem personalnym? ({kl1.czytrener()})')
+print(kl1.trener)
+kl1.print_trener()
+
 
