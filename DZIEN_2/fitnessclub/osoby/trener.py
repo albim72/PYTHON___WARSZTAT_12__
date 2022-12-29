@@ -10,10 +10,10 @@ class Trener(Osoba,Klub):
         self.nr_licencji = nr_licencji
         self.lata_dosw = lata_dosw
         self.expert = expert
-        self.trener = True
+        self.trener = True if nr_licencji != "" else False
 
     def print_trener(self):
         print(f'trener nr licencji: {self.nr_licencji}, lata doświadczenia: {self.lata_dosw}, '
               f'poziom ekspercki ({self.expert})')
-        
+
 
