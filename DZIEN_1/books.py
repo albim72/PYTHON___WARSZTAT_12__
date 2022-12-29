@@ -20,8 +20,22 @@ class Book:
     def setcena(self,nowacena):
         self.cena = nowacena
 
+    def setoprawa(self,nowaoprawa):
+        self.oprawa = nowaoprawa
+
+    def getoprawa(self):
+        return self.oprawa
+
 
 b1 = Book(23,"Wiedźmin","Andrzej Sapkowski",39)
 print(f'rabat na zakup książki: {b1.rabat():.2f} zł')
 b1.setcena(46)
 print(f'nowy rabat na zakup książki: {b1.rabat():.2f} zł -> do zapłaty: {b1.cena - b1.rabat():.2f} zł')
+b1.setoprawa("twarda")
+print(f'rodzaj oprawy: {b1.getoprawa()}')
+
+print("___________________________________________________________")
+
+b2 = Book(27,"Hobbit","J.R.R. Tolkien",32)
+print(f'rabat na zakup książki: {b2.rabat():.2f} zł -> do zapłaty: {b2.cena - b2.rabat():.2f} zł')
+print(f'rodzaj oprawy: {b2.oprawa}')
