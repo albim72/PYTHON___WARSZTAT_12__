@@ -1,9 +1,11 @@
-dzien  = 15
+dzien  = 2
 match dzien:
-    case 1:
+    case 0 | 1:
         print("poniedziałek")
     case 2:
         print("wtorek")
+    case 2:
+        print("nadal wtorek")
     case 3:
         print("środa")
     case 4:
