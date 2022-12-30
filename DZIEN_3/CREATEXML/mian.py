@@ -21,3 +21,8 @@ waga.text = '78'
 
 wzrost = SubElement(parazdr,'wzrost')
 waga.text = '173'
+
+print(pretty(top))
+
+with open("osoba.xml","a",encoding="utf-8") as f:
+    f.write(pretty(top))
